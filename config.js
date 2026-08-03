@@ -3,7 +3,5 @@
 const IS_PROD = process.env.NODE_ENV === "production";
 // src/config.js
 export const API_URL = IS_PROD
-    ? "https://mnemosym-v2-backend.vercel.app"
+    ? "https://mnemosym-backend-a9whf8yxh-axel-35s-projects.vercel.app"
     : "http://localhost:3000" ;
-
-    
