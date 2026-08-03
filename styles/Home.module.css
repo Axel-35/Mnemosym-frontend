@@ -1,0 +1,97 @@
+.container {
+  width: 100%; 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  padding: 2rem 2rem; 
+  margin: 0 auto; 
+}
+
+.title {
+  color: #D4AF7F;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: clamp(2rem, 6vw, 3.5rem); 
+  text-align: center; 
+  margin: 0 auto; 
+  letter-spacing: 5px;
+}
+
+.subtitle {
+  width: 100%;
+  max-width: 600px;
+  font-size: clamp(1rem, 4vw, 2rem);
+  font-weight: 600; 
+  text-align: center;
+  margin: 1rem auto; 
+  color: #03045e;
+  font-style: italic;
+}
+
+.link {
+  color: #14218F;;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ------  SECTION -----*/
+
+ .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  margin : 20px;
+ }
+
+ .sectionTitle {
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  color: #03045e;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-style: italic;
+ }
+
+.icone {
+  width: 100px;
+  height: auto;
+  
+}
+ /* ---- FRAGMENT ----*/
+.bookInCollect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+}
+
+.btnSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: 768px) {
+
+  .btnSection {
+    flex-direction: row;
+  }
+
+  .bookInCollect {
+    flex-direction: row;
+  }
+
+  .subtitle {
+    max-width: 100%;
+  }
+
+ 
+}

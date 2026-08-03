@@ -1,0 +1,179 @@
+/* Zone principale */
+.readWrapper {
+  padding: 40px;
+  font-family: Georgia, serif;
+  background-color: #fdfaf6;
+  color: #2c2c2c;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/* Titre du livre */
+.title {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+}
+
+/* Conteneur global */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 100%;
+  margin: 20px 0;
+}
+
+/* Boutons navigation */
+.prevPage,
+.nextPage {
+  margin: 20px 0;
+}
+
+
+.btnSecondary {
+  background-color: #d4af7f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btnSecondary:hover {
+  background-color: #b38e5d;
+}
+
+/* Zone de lecture */
+.reader {
+  position: relative;
+  width: 100%;
+  margin: 2rem auto 30px;
+  padding: 1rem 1.25rem;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+  text-align: justify;
+  hyphens: auto;
+  word-break: normal;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #D4AF7F30;
+  border-radius: 10px;
+  border: 4px solid #D4AF7F;
+}
+
+.reader,
+.reader * {
+  box-sizing: border-box;
+}
+
+/* Pages gauche et droite */
+.leftPage,
+.rightPage {
+  background-color: #fffdf5;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  line-height: 1.6;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width :768px) { 
+  .leftPage, .rightPage {
+    width: 49% 
+  } 
+}
+
+.page {
+  width: 100%;
+  background-color: #fffdf5;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  line-height: 1.6;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width :768px) { 
+  .page {
+     width: 100% 
+  } 
+}
+
+.rightPage {
+  border-left: 3px solid #D4AF7F;
+}
+
+/* Numérotation */
+.pageNumber {
+  margin-top: auto;
+  text-align: center;
+  font-weight: bold;
+  color: #D4AF7F;
+  padding-top: 20px;
+}
+
+.ghostPage {
+  position: absolute;
+  top: 1rem;      /* padding-top de .reader */
+  left: 1.25rem;  /* padding-left de .reader */
+  right: 1.25rem; /* padding-right de .reader */
+  bottom: 1rem;   /* padding-bottom de .reader*/
+  width: 100%;
+  padding: 30px;
+  background-color: #fffdf5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  line-height: 1.6;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid red;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+
+/* Paragraphes */
+.reader p {
+  margin: 1rem 0;
+  text-align: justify;
+}
+
+/* Titres dans le contenu */
+.reader h1 {
+  margin: 1.6rem 0 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Lettrine */
+.reader p:first-of-type::first-letter {
+  float: left;
+  font-size: 4rem;
+  line-height: 1;
+  padding-right: 0.12rem;
+  padding-top: 0.05rem;
+  font-weight: 700;
+  color: #8b5e3c;
+  font-family: "Playfair Display", serif;
+}
+

@@ -1,0 +1,36 @@
+.cookies {
+    width: 100%;
+    max-width: 1400px;
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4af7f;
+    color: #1e293b;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.btn {
+  border: 2px solid #03045e;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 3px;
+  background-color: #03045e ;
+  color: white;
+  padding: 6px;
+  font-weight: Bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid white;
+  background-color: white ;
+  color: #03045e ;
+  
+}

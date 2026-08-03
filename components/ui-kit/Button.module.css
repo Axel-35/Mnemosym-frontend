@@ -1,0 +1,41 @@
+.btnBase {
+  width: 100%;
+  max-width: 280px;
+  height: 50px;
+  padding: 5px;
+  margin : 20px auto 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 3px solid transparent;
+  font-family: Merriweather;
+} 
+
+.btnPrimary {
+  composes: btnBase;
+  background-color: #D4AF7F;
+}
+
+.btnSecondary {
+  composes: btnBase;
+  background-color: #03045e;
+}
+
+.btnPrimary:hover {
+  border: 3px solid  #D4AF7F;
+  color :  #D4AF7F;
+  background-color: white;
+}
+
+.btnSecondary:hover {
+  border: 3px solid  #03045e;
+  color :  #03045e;
+  background-color: white;
+}
+

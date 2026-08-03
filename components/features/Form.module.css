@@ -1,0 +1,68 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Gill Sans", sans-serif;;
+  gap: 20px;
+}
+
+.form textarea {
+  resize: none;
+  height: 200px;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+.form button {
+  font-family: inherit;
+}
+
+.radioContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    gap: 20px;
+    font-family: inherit;
+    border: none /*suppression de la bordure du fieldset */
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.radio {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  font-family: inherit; 
+}
+
+.why {
+  resize: none;
+  height: 60px;
+  width: 50%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 24px;
+}
+
+.contact {
+  font-size: 18px;
+  margin: 20px auto 10px;
+  font-family: inherit;
+}
+

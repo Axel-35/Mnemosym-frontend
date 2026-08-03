@@ -1,0 +1,116 @@
+.clubContainer {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 4px;
+  font-family: "Merriweather", serif;
+  color: #1e293b;
+}
+
+/* Titre principal */
+.clubContainer h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1B2A49
+}
+
+/* Sous-titre */
+.subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #64748b;
+}
+
+/* Liste des commentaires */
+.commentList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Carte individuelle */
+.commentCard {
+  background-color: #f8f9fa;
+  border-left: 5px solid #d4af7f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* En-tête (auteur + likes) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Contenu du commentaire */
+.content {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Référence du livre */
+.bookRef {
+  font-size: 0.9rem;
+  color: #475569;
+  text-align: right;
+}
+
+/* Message de chargement */
+.loading {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+}
+
+.likeContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.heart {
+  color: #94a3b8;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.heart:hover {
+  color: #d4af7f;
+  transform: scale(1.2);
+}
+
+.heartLiked {
+  color: #d4af7f;
+  font-size: 1.3rem;
+  transform: scale(1.2);
+}
+
+.fragmentTag {
+  margin-top: 6px;
+  padding: 4px 8px;
+  border-left: 4px solid #d4af7f;
+  font-style: italic;
+  font-weight: 500;
+  color: #d4af7f;
+
+}
+
+.bookLink {
+  color: #2a72b1;         
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.bookLink:hover {
+  color: #d4af7f;         
+}

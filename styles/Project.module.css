@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  width: 80vw;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.title {
+  color: #D4AF7F;
+  font-family: Merriweather;
+  line-height: 1.2; /* Hauteur de ligne pour une bonne lisibilité */
+  font-size: clamp(2rem, 6vw, 3.5rem); /* Taille responsive entre 2.5rem et 4rem */
+  text-align: center; /* Centre le texte */
+  margin-top: 40px; /* Espacement sous le titre */
+  letter-spacing: 8px;
+  /*border-bottom: 4px solid #1B2A49;
+  /*border: 2px solid red;*/
+}
+
+.page {
+  display: flex;
+  width: 90%;
+  margin: 2rem auto 30px;
+  padding: 1rem 1rem;
+  font-family: Lato, sans-serif;
+  font-size: 22px;
+  line-height: 1.7;
+  color: #222;
+  text-align: justify;
+  hyphens: auto;
+  word-break: normal;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #D4AF7F30;
+  border-radius: 10px;
+  border: 4px solid #D4AF7F;
+}
+
+
+
+.text {
+  background-color: #fffdf5;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text h2 {
+  text-align:center; 
+  margin: 5px auto;
+}
+
+
+.btnSecondary {
+  width: 280;
+  height: 50px;
+  padding: 5px;
+  margin : 20px auto 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #03045e;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.input {
+    width: 40px;
+    height: 40px;
+    background-color: #D4AF7F; 
+    border:  #D4AF7F30;
+}
+

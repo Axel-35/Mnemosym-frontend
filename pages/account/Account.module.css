@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.btn {
+  background-color: #03045E;
+  border: #03045E;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 200px;
+  cursor: pointer;
+  border: 3px solid transparent;
+}
+
+.btn:hover {
+  border: 2px solid  #03045E;
+  color :  #03045E;
+  background-color: white;
+}
+
+.input {
+  font-family: 'Merriweather', serif;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  font-size: 18px;
+  border: 2px solid #03045E
+}
+
+.message {
+  font-size: 18px;
+  font-weight: bold;
+  color :  #03045E;
+}
+
+.errorMessage {
+  font-size: 18px;
+  font-weight: bold;
+  color:red;
+}
+

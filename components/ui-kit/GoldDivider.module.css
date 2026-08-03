@@ -1,0 +1,8 @@
+.goldDivider {
+  width: 100%;
+  max-width: 900px;
+  height: 2px;
+  display: flex;
+  margin: 1rem auto;
+  background: linear-gradient(to right, transparent, #D4AF7F, transparent );
+}

@@ -1,0 +1,26 @@
+.bookContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.bookHeroTitle {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.contributors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 20px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}

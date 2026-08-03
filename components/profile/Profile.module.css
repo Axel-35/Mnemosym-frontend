@@ -1,0 +1,121 @@
+.layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+} 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  background-color: #faf9f6;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/*  Header du profil  */
+.header {
+  margin : 5px auto;
+  width: 100%;
+}
+
+.header h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.header p {
+  color: #777;
+  text-align: left;
+}
+
+.libraryTitle {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+
+.libraryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.bookContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.cover {
+  display: block;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Merriweather', serif;
+}
+
+.cover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.closeButton {
+  color: #d4af7f;
+  cursor: pointer;
+  font-size: 80;
+  transition: transform 0.2s ease;
+  position: absolute;
+  right: -25px;
+  top: -45px;
+  background-color: transparent;
+  border: 0px;
+  
+}
+
+.closeButton:hover {
+  transform: scale(1.5);
+}
+
+.emptyMessage {
+  color: #777;
+  font-style: italic;
+}
+.statsContainer {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  height: fit-content;
+}
+
+.statsTitle {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+  border-bottom: 2px solid #d4af7f;
+  padding-bottom: 10px;
+}
+
+.statsCard p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.statsCard strong {
+  color: #222;
+}

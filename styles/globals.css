@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #FFF9F3;
+  color: #1B2A49;
+  /*overflow-x: hidden;*/
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.layout {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-spacer { /* correction du header pour qu'il ne soit pas disposé sur le main*/
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+}
+
+/* * { outline: 2px solid red;}*/

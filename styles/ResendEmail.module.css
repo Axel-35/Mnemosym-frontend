@@ -1,0 +1,38 @@
+.container {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #FFF;
+    padding: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border:2px solid #D4AF7F;
+    margin-top: 10px;
+}
+
+.link {
+    cursor: pointer;
+    color: #D4AF7F;
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+
+.btn {
+  margin : 20px auto 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #D4AF7F;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border : none;
+  border-bottom: 2px solid #D4AF7F;
+}
+
+.btn:disabled {
+  background-color: #ccc; /* gris clair ou ton choix */
+  color: #666;
+  cursor: not-allowed;
+}

@@ -1,0 +1,188 @@
+/* === Structure générale === */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* taille du header corrigé avec header-spacer*/
+  z-index: 1000; /* toujours au-dessus du reste du contenu */
+  border-bottom: #d4af7f 4px solid;
+  background-color: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* === Logo (zone gauche) === */
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.logoIcon {
+  width: 50px;
+  height: auto;
+}
+
+.icone {
+  width: 25px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.logo {
+  text-decoration: none;
+  color: #d4af7f;
+}
+
+.logo h1 {
+  margin: 0;
+  cursor: pointer;
+  letter-spacing: 6px;
+}
+
+.logo h1:hover {
+  color: white;
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 1.6rem; /* ou ce que tu veux */
+}
+
+/* === Navigation === */
+.navLink {
+  position: relative;
+  color: #d4af7f;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+  padding-bottom: 4px;
+}
+
+.mobileLogin {
+  position: relative;
+  background-color: #1e293b;
+  color: #d4af7f;
+  border: none;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: color 0.2s ease;
+  padding-bottom: 4px;
+}
+
+
+/* Barre dorée animée */
+.navLink::after, .mobileLogin::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d4af7f;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover, .mobileLogin:hover {
+  color: white;
+}
+
+.navLink:hover::after, .mobileLogin:hover::after {
+  width: 100%;
+}
+
+/* === Bouton / Profil === */
+
+
+.connexionButton,
+.profileLink,
+.logoutButton {
+  background-color: #d4af7f;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.connexionButton:hover,
+.profileLink:hover {
+  background-color: #7fa4d4;
+}
+
+.logoutButton {
+  background-color: #dc2626;
+}
+
+.logoutButton:hover {
+  background-color: #b91c1c;
+}
+
+.burgerMenu {
+  position: relative;
+}
+
+.burger {
+  min-width: 40px;
+  height: 40px;
+  gap: 4px;
+  border: 2px solid #d4af7f;
+  background-color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.burgerDiv {
+  background-color: #d4af7f;
+  width: 80%;
+  height: 6%;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: absolute;
+  background-color: #1e293b;
+  padding: 1rem;
+  right: -40px;
+  top: 60px;
+  min-width: 140px;
+}
+
+
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .burgerMenu {
+    display: none;
+  }
+}
+

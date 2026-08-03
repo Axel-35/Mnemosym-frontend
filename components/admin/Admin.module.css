@@ -1,0 +1,99 @@
+.container {
+    margin: 20px;
+}
+
+.form, .pending, .processing {
+    margin : 5px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #d4af7f;
+    border-radius: 2px;
+    text-align: justify;
+}
+
+.pending button {
+  width: 150px;
+  border: 2px solid #03045e;
+  border-radius: 3px;
+  background-color: #d4af7f ;
+  color: 03045e;
+  padding: 2px;
+  font-weight: Bold;
+}
+
+.title {
+  text-align: center;
+  margin-top: 15px ;
+}
+
+.links {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.links a {
+  color: #03045e;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+  color: #d4af7f;
+}
+
+.synopsis, .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.synopsis textarea, .text textarea {
+  height: 100px;
+  width: 80%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 18px;
+  color: black;
+}
+
+.button {
+  background-color: #d4af7f;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.textContainer { 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.textInput {
+  margin-bottom: 10px;
+  width: 600px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 18px;
+  color: black;
+}

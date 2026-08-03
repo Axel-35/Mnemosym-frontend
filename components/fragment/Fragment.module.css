@@ -1,0 +1,305 @@
+/*
+* SECTION 1 : PRESENTATION
+*/
+
+.main {
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 1rem 1rem; 
+  max-width: 1200px; 
+  width: 100%; 
+  margin: 20px auto;
+  box-sizing: border-box; 
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  line-height: 1.2;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  text-align: center;
+  margin: 5px auto;
+  letter-spacing: 8px;
+  color: #c103be;
+}
+
+
+.subtitle {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 500;
+  margin: 1rem auto;
+  color: #1B2A49;
+
+}
+
+.fragmentTitle {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 500;
+  margin: 1rem auto;
+  color: #1B2A49;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 auto 1rem;
+  color: #1B2A49;
+  text-align:center;
+}
+
+/*
+* SECTION 2 : COMPTEUR FRAGMENTS
+*/
+.dataFragments {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  max-width: 700px;
+  gap: 20px; 
+  margin-bottom: 40px;
+}
+
+.sectionCount {
+  flex: 1; /* chaque bloc prend une part égale de l'espace */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  min-height: 200px;
+  background-color: #D4AF7F30; 
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.fragmentRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;      
+  gap: 10px;               
+}
+
+.counter {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c103be;
+}
+
+.banner {
+
+  width: 60px;
+  height: auto;
+  border-radius: 12px;
+  
+}
+
+/*
+* SECTION 3 : BOOK IN COLLECT
+*/
+
+.bookInCollect {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+  min-height: 250px;
+  align-items: stretch; /* étirement des élèments sur toute la larguer de la div */
+}
+
+.bookCard {
+  width: 250px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  background-color: #D4AF7F30;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.5s ease-out;
+  padding: 25px;
+}
+
+.searchSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.searchSection input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #D4AF7F;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.searchMessage {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2em;
+}
+
+/*
+* SECTION 4 - INFORMATION FRAGMENTS 
+*/
+
+.sectionFragment {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 1200px;
+  color: #1B2A49;
+  background-color: #D4AF7F30;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  animation: fadeIn 0.5s ease-out;
+  padding: 25px;
+}
+
+.infoFragment {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  text-align: left;
+  margin: 10px auto;
+}
+
+.infoFragment p {
+  margin: 0;
+  line-height: 1.6; 
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.bookCard:hover {
+  transform: translateY(-5px);
+}
+
+/*animation d’apparition des livres*/
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Button of add book*/
+.ConnexionButton {
+  background-color: #D4AF7F;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.ConnexionButton:hover {
+  background-color: #b98e5f;
+}
+/* Button of add fragment*/
+.button {
+  background-color: #D4AF7F;
+  color: white;
+  padding: 7px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #b98e5f;
+}
+
+/*Info Fragment*/
+
+.icon {
+  font-size: 2rem; /* ajuste la taille */
+  line-height: 1; /* pour que ça reste bien centré */
+  flex-shrink: 0; /* empêche l’icône de se réduire */
+  margin: 10px; /* optionnel, pour affiner l’alignement */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*Responsive pour mobile*/
+
+@media (max-width: 768px) {
+  
+  .searchBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .title {
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+
+
+}
+
+.rejectedMessage {
+  text-align: center;
+  font-size: 20px;
+  line-height: 2em;
+  color: red;
+  font-weight: bold;
+}
