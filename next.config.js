@@ -1,9 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+
   images: {
     domains: [],
   },
+
+  // Autoriser ton IP locale pour le HMR
+  allowedDevOrigins: ['192.168.1.17'],
+
   async redirects() {
     return [
       {
